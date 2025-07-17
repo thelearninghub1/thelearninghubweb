@@ -1,0 +1,77 @@
+.maindashboard > div:last-child {
+    padding: 2vmax 4vmax;
+    box-sizing: border-box;
+  }
+  .mainDiv {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .productListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #D9F1FF;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vmin;
+    max-height: 80vh;
+    overflow: auto;
+    border-radius: 16px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.11);
+  }
+  
+  #productListHeading {
+    font: 200 1.5rem "Roboto";
+    padding: 2vmax;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.637);
+    transition: all 0.5s;
+    text-align: center;
+  }
+  
+  .productListTable {
+    border: none !important;
+    flex-grow: 1;
+    min-width: 800px;
+  }
+  
+  .productListTable div {
+    font: 300 1vmax "Roboto";
+    color: rgba(0, 0, 0, 0.678);
+    border: none !important;
+  }
+  
+  .productListTable a,
+  .productListTable button {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+  }
+  
+  .productListTable a:hover {
+    color: green;
+  }
+  
+  .productListTable button:hover {
+    color: green;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .productListTable div {
+      font: 300 1.8vmax "Roboto";
+    }
+  }
+  
+
+  .dashboardMainContainer {
+  background-color: white;
+  width: 100%;
+  min-height: 100vmin;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 100%;
+}
+

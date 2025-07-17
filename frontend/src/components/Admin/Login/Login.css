@@ -1,0 +1,228 @@
+.login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vmin;
+    background-color: hsl(219, 48%, 8%);
+
+  }
+  
+  .loginContainer {
+    width: 50%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+    box-sizing: border-box;
+    margin-top: 7vmax;
+
+  }
+  
+  .loginForm {
+    background-color: inherit;
+    border-radius: 5px;
+    height: 70vh;
+    padding: 2vmax;
+    box-sizing: border-box;
+
+  }
+  
+  .loginForm > h4 {
+    margin: 2vmax;
+    letter-spacing: 15px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-100vw); 
+    animation: contactFormInputs 1s ease-in-out forwards;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.457);
+  }
+  
+  .loginForm > h4 > p {
+      transition: all 0.5s;
+      cursor: default;
+    
+    }
+  
+  .loginForm > h4 > p:hover {
+      transform: translateY(-10px);
+    }
+  
+  
+    .loginForm > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vmax 8vmax;
+    box-sizing: border-box;
+  
+    }
+  
+    .loginForm > div > input {
+    padding: 1.1vmax 2vmax;
+    margin: 1vmax;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 30px;
+    font: 100 16px cursive;
+    outline: none;
+    transform: translateX(-100vw);
+    animation: contactFormInputs 1s ease-in-out forwards 0.5s;
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.4vmax;
+    }
+  
+    .loginForm > div > button {
+    padding: 1vmax 2vmax;
+    margin: 1vmax;
+    border-radius: 30px;
+    background-color: #2a7fba;
+    transform: translateY(-100vh);
+    animation: contactFormBtn 1s ease-in-out forwards 1s;
+
+    font: 800 16px "Roboto";
+    color: white;
+    letter-spacing: 0.2vmax;
+    transition: all 0.5s;
+    }
+    .loginForm > div > button:hover {
+      background-color: hsl(219, 48%, 8%);
+
+    }
+
+    .forgotBtn {
+      font: 200 15px cursive;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.731);
+      transition: all 0.5s;
+      align-self: flex-end;
+    }
+
+    .forgotBtn:hover {
+      color: black;
+    }
+    @media screen and (max-width:1150px) {
+        .loginForm {
+          padding: 4vmax 0vmax;
+        }
+
+        .loginForm > div {
+            padding: 3vmax ;
+        }
+
+    .loginForm > div > input {
+    padding: 1.4vmax 2vmax;
+
+    }
+
+    }
+
+    @media screen and (max-width:1050px) {
+  .loginContainer {
+    width: 60%;
+
+  }
+  .loginForm > div > input {
+    margin: 3vmax 1vmax;
+  }
+    }
+
+    @media screen and (max-width:730px) {
+        .loginContainer {
+            margin-top: 19vmax;
+        }
+        .loginContainer {
+            width: 70%;
+        
+          }
+          .loginForm {
+    height: 60vh;
+
+          }
+    }
+  
+    @media screen and (max-width:600px) {
+      .loginContainer {
+          width: 100%;
+          border-radius: 0;
+        }
+         .loginForm {
+          border-radius: 0;
+        }
+        .loginForm > div {
+          padding: 4vw 8vw;
+        }
+        .loginForm > div > input {
+          padding: 3vw 6vw;
+          margin: 2vw;
+        }
+        
+    .loginForm > div > button {
+      padding: 3vw 6vw;
+      margin: 2vw;
+    }    
+    }
+    @media screen and (max-width:400px) {
+  .loginForm > h4 {
+    font-size: 25px;
+  }
+
+  .loginForm > div > input {
+    margin: 2vmax 0.5vmax;
+  }
+
+  @media screen and (max-width:350px) {
+    .loginContainer {
+        margin-top: 11vmax;
+    }
+    .loginForm > h4 {
+        font-size: 17px;
+      }
+      .loginForm {
+        height: 50vh;
+    
+              }
+             
+              .loginForm > h4 {
+                margin-top: 5vmax;
+              }
+  }
+
+    }
+    @keyframes contactTransition {
+        from {
+          transform: translateX(-100%) translateY(-50%);
+        }
+        to {
+          transform: translateX(20%) translateY(-50%);
+        }
+      }
+    
+      
+    @keyframes contactFormTransition {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+     
+    @keyframes contactFormTransition {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes contactFormBtn {
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes contactFormInputs {
+        to {
+          transform: translateX(0);
+        }
+      }

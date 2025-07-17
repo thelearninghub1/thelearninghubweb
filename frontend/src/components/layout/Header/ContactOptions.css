@@ -1,0 +1,68 @@
+.contactOptionsContainer {
+    position: fixed;
+    bottom: 18px;
+    left: 20px;
+    z-index: 100000;
+
+}
+.contactOptionsContainer > a > svg {
+    font-size: 45px;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.whtButton {
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    padding: 10px;
+    background: inherit;
+
+    }
+  
+ 
+  
+ 
+ 
+    .whtButton::after {
+      content: '';
+      width: 30px; 
+      height: 30px;
+      border-radius: 100%;
+      border: 6px solid rgba(79,209,197,.64);
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ringing 1.5s infinite;
+  
+    }
+    
+   
+    @keyframes ringing {
+      0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+      }
+      100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+      }
+    }
+ 
+  @media screen and (max-width: 768px) {
+    .contactOptionsContainer {
+    bottom: 13px;
+
+    }
+    .contactOptionsContainer > a > svg {
+    font-size: 40px;
+
+    }
+  }

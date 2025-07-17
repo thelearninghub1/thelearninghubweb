@@ -1,0 +1,296 @@
+.servicesContainer {
+    min-height: 100vmin;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.servicesContainer > div {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vmin;
+}
+
+.topServicesContainer  {
+  background-image: url('../../assets/registration.jpeg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: brightness(0.8) contrast(110%);
+    flex-direction: column;
+    
+}
+.topServicesContainer > h1 {
+    font: 600 46px "Roboto";
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+
+}
+    .topServicesContainer > p {
+    font: 200 21px "Roboto";
+    padding: 0vmax 6vmax;
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 730px) {
+    .topServicesContainer {
+      background-size: contain;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.registration-age-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Registration Steps */
+  .registration-steps {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .step-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+  .step-box:hover {
+    color:white ;
+    border: 2px solid white;
+    background-color:rgba(0, 0, 0, 0.627) ;
+  }
+  
+  .step-number {
+    font-weight: bold;
+    color: #2a7fba;
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
+  
+  h3 {
+    margin: 5px 0;
+  }
+  
+
+  
+  /* Age Criteria */
+  .age-criteria {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #2a7fba;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .registration-age-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .registration-steps, .age-criteria {
+      width: 100%;
+    }
+  }
+  
+  .AdmissionBtn {
+    padding: 1vmax 4vmax;
+    cursor: pointer;
+    box-shadow:  0 0 7px rgba(0, 0, 0, 0.364);
+    border: none;
+    color: white;
+    background-color: #2C7EAD;
+    font: 100 16px "Lato";
+    letter-spacing: 0.1vmax;
+    transition: all 0.5s;
+  }
+  .admissionBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vmax;
+  }
+
+  .AdmissionBtn:hover {
+    color: #2C7EAD;
+    border: 2px solid #2C7EAD;
+    background-color: white;
+}
+
+
+
+
+.videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.videoContainer > video {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  max-height: 40vmax;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topServicesContainer {
+  position: relative;
+  width: 100%;
+  height: 70vmin;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.video-overlay-content h1 {
+  font: 600 46px "Roboto";
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
+}
+
+.video-overlay-content p {
+  font: 200 21px "Roboto";
+  padding: 0 6vmax;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
+  letter-spacing: 0.1vmax;
+}
+
+
+
+@media screen and (max-width: 730px) {
+ 
+
+
+
+  .video-overlay-content h1 {
+    padding-top: 200px;
+  }
+
+  .video-overlay-content p {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .topServicesContainer > h1 {
+        padding-top: 20vmax;
+    }
+     .servicesContainer > div:first-child  {
+        min-height: 90vmin;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .servicesContainer > div:first-child  {
+        min-height: 100vmin;
+    }
+    .topServicesContainer > h1 {
+        padding-top: 25vmax;
+    }
+    .lowerContactContainer > div:last-child  {
+        flex-direction: column;
+    }
+    .topServicesContainer > p {
+    padding-bottom: 2vmax;
+
+    }
+  
+}

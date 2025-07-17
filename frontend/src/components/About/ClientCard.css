@@ -1,0 +1,73 @@
+.clientCardContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    height: 18%;
+    box-sizing: border-box;
+    flex: none;
+    transition: all 0.5s !important;
+    margin: 0.3vmax auto;
+    background-color: #2C7EAD;
+}
+
+.clientCardContainer > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientCardContainer > div:first-child > img {
+    width: 75px;
+}
+.clientCardContainer > div:last-child > h2 {
+    font: 300 40px "Roboto";
+}
+
+.clientCardContainer > div:last-child > h3 {
+    font: 200 17px "Roboto";
+    padding-top: 0.5vmax;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .clientCardContainer {
+        width: 100%;
+    }
+.clientCardContainer > div:first-child > img {
+    width: 70px;
+}
+.clientCardContainer > div:last-child > h2 {
+    font-size: 40px;
+}
+.clientCardContainer > div:last-child > h3 {
+    font-size: 15px;
+}
+}
+
+
+@media screen and (max-width: 730px) {
+    .clientCardContainer {
+        width: 80%;
+    }
+    .clientCardContainer > div {
+        padding: 3vmax 0vmax;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .clientCardContainer {
+        width: 100%;
+    }
+    .clientCardContainer > div:first-child > img {
+        width: 55px;
+    }
+.clientCardContainer > div:last-child > h2 {
+    font-size: 30px;
+
+}
+.clientCardContainer > div:last-child > h3 {
+    font-size: 13px;
+}
+}

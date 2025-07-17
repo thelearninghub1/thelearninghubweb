@@ -1,0 +1,384 @@
+.ourProjectsContainer {
+    min-height: 100vmin;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ourProjectsContainer > div {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.topAffiliationContainer {
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    min-height: 60vmin;
+    box-sizing: border-box;
+    text-align: center;
+    filter: brightness(0.99) contrast(105%);
+}
+
+.topAffiliationContainer > h1 {
+    font: 600 2.6vmax "Roboto";
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5vmax;
+}
+
+.topAffiliationContainer > p {
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    
+    font: 200 1.4vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midProjectContainer {
+display: flex;
+box-sizing: border-box;
+padding: 2vmax;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px) {
+.topAffiliationContainer > h1 {
+    font-size: 3.7vmax;
+    padding-top: 14vmax;
+    padding-bottom: 1vmax;
+
+}
+
+.topAffiliationContainer > p {
+    font-size: 2.6vmax;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+.topAffiliationContainer {
+    min-height: 100vmin;
+}
+}
+
+
+
+/* Introduction.css */
+.introduction-container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2C7EAD;
+    position: relative;
+    display: inline-block;
+    padding: 2vmax 0vmax;
+  }
+  
+  .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #2C7EAD;
+    margin-top: 5px;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .text {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+
+
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax;
+    text-align: center;
+    width: 80%;
+}
+.program-card {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.extraDescription {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1vmax;
+}
+.extraDescription > p {
+    text-align: left;
+    padding: 1.5vmax;
+    font: 100 17px "Roboto";
+    line-height: 2vmax;
+    color: #333;
+
+}
+.extraDescription > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+    width: 50%;
+ 
+}
+.extraDescription > div > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.215);
+}
+
+.extra-info {
+    padding: 1.5vmax;
+    font: 100 17px "Roboto";
+    line-height: 2vmax;
+    color: #333;
+}
+
+.roadmap-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax;
+    width: 60%;
+}
+.roadmap-container > img {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 16px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.215);
+}
+
+@media screen and (max-width: 768px) {
+    .extraDescription {
+        flex-direction: column-reverse;
+    }
+    .extraDescription > p {
+        line-height: 3vmax;
+    }
+    .extra-info {
+        line-height: 3vmax;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topAffiliationContainer {
+  position: relative;
+  width: 100%;
+  height: 70vmin;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.video-overlay-content h1 {
+  font: 600 46px "Roboto";
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
+}
+
+.video-overlay-content p {
+  font: 200 21px "Roboto";
+  padding: 0 6vmax;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
+  letter-spacing: 0.1vmax;
+}
+
+
+
+@media screen and (max-width: 730px) {
+  .topAffiliationContainer {
+    height: 100vmin;
+  }
+
+  .video-overlay-content h1 {
+    padding-top: 200px;
+  }
+
+  .video-overlay-content p {
+    padding-bottom: 40px;
+  }
+}
+
+
+.affiliation-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+
+.affiliation-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.affiliation-intro,
+.affiliation-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.affiliation-subtitle {
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.affiliation-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.affiliation-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .affiliation-title {
+    font-size: 1.5rem;
+  }
+
+  .affiliation-intro,
+  .affiliation-text,
+  .affiliation-list li {
+    font-size: 0.95rem;
+  }
+
+  .affiliation-container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .affiliation-title {
+    font-size: 1.3rem;
+  }
+
+  .affiliation-intro,
+  .affiliation-text,
+  .affiliation-list li {
+    font-size: 0.9rem;
+  }
+}

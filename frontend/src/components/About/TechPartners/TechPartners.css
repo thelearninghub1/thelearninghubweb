@@ -1,0 +1,205 @@
+.ourProjectsContainer {
+    min-height: 100vmin;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ourProjectsContainer > div {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.topTechContainer {
+    background-image: url("../../../assets/techPartner.jpeg");
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    min-height: 70vmin;
+    box-sizing: border-box;
+    text-align: center;
+    filter: brightness(0.99) contrast(105%);
+}
+
+.topTechContainer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.topTechContainer > h1 {
+    font: 600 2.6vmax "Roboto";
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5vmax;
+}
+
+.topTechContainer > p {
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    
+    font: 200 1.4vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midProjectContainer {
+display: flex;
+box-sizing: border-box;
+padding: 2vmax;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px) {
+  .topTechContainer {
+    background-size: contain;
+   
+}
+
+    .partner-card {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  
+  }
+
+
+
+
+    .ourProjectsContainer > div {
+    flex-direction: column;
+    background-size: contain;
+   
+  }
+ 
+.topTechContainer > h1 {
+    font-size: 3.7vmax;
+    padding-top: 14vmax;
+    padding-bottom: 1vmax;
+
+}
+
+.topTechContainer > p {
+    font-size: 2.6vmax;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+.topTechContainer {
+    min-height: 100vmin;
+   
+}
+}
+
+
+
+  
+  .header-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .partners-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .partner-card {
+    width: 80%;
+    max-width: 600px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px ;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .partner-card:hover {
+    background-color: #C1E3F8;
+  }
+  .partner-card h2 {
+    margin: 10px 0;
+    color: #2C7EAD;
+  }
+  
+  .partner-card p {
+    color: #555;
+  }
+  
+  .partner-card .logo {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  .left {
+    transform: translateX(-100%);
+  }
+  
+  .right {
+    transform: translateX(100%);
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .partner-card {
+      width: 90%;
+    }
+  }
+  
+
+
+
+
+
+  .partnerlogo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+
+
+
+
+

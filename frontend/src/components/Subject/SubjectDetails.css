@@ -1,0 +1,119 @@
+.projectDetailsContainer {
+    max-width: 100%;
+    min-height: 95vmin;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 12vmax 4vmax;
+    background-color: #87CFEBCE;
+
+
+}
+.projectDetailsContainer > div {
+    width: 50%;
+
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+.projectDetailsContainer > div:last-child {
+    align-items: flex-start;
+    justify-content: space-evenly;
+display: flex;
+
+}
+
+.carouselImage {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  object-fit: contain; /* ✅ shows full image without cropping */
+  display: block;
+  margin: auto;
+}
+
+.projectDetailsContainer > div:last-child > div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.372);
+    
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.projectDetailsContainer > div:last-child > div:last-child {
+    border-bottom: none;
+
+}
+
+.projectDetailsContainer > div:last-child > div > h3 {
+    font: 550 20px "Roboto";
+    color: rgba(0, 0, 0, 0.74);
+}
+
+
+.projectDetailsContainer > div:last-child > div > p {
+    font: 100 14px "Lato";
+    padding: 0.5vmax 0vmax;
+    color: rgba(0, 0, 0, 0.64);
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    line-height: 3vh;
+
+}
+
+@media  screen and (max-width: 730px){
+    .projectDetailsContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-top:20vmax ;
+    }
+    .projectDetailsContainer > div {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding: 4vmax 1vmax;
+
+    }
+    .carouselImage {
+        width: 45vmax;
+    }
+.projectDetailsContainer > div:last-child > div {
+    margin: 1vmax auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+}
+
+@media  screen and (max-width: 350px) {
+    .carouselImage {
+        width: 35vmax;
+    }
+}
+
+
+
+
+.subjectCarousel {
+  max-width: 600px;
+  margin: auto;
+}
+
+.carouselImage {
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.carouselImage {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  object-fit: contain; /* ✅ shows full image without cropping */
+  display: block;
+  margin: auto;
+}

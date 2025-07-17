@@ -1,0 +1,182 @@
+.ourProjectsContainer {
+    min-height: 100vmin;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ourProjectsContainer > div {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.topSupportContainer {
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    min-height: 60vmin;
+    box-sizing: border-box;
+    text-align: center;
+    filter: brightness(0.99) contrast(105%);
+}
+
+.topSupportContainer > h1 {
+    font: 600 2.6vmax "Roboto";
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5vmax;
+}
+
+.topSupportContainer > p {
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    
+    font: 200 1.4vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midProjectContainer {
+display: flex;
+box-sizing: border-box;
+padding: 2vmax;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.Bhailogo {
+  width: 12vmax;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px) {
+.topSupportContainer {
+  background-image: cover;
+}
+  .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  margin-top: -11vmax;
+}
+
+}
+
+
+@media screen and (max-width: 550px) {
+.topSupportContainer {
+    min-height: 100vmin;
+}
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  margin-top: -4vmax;
+}
+}
+
+
+
+  
+  .header-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .partners-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .partner-card {
+    width: 80%;
+    max-width: 600px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px ;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .partner-card:hover {
+    background-color: #C1E3F8;
+  }
+  .partner-card h2 {
+    margin: 10px 0;
+    color: #2C7EAD;
+  }
+  
+  .partner-card p {
+    color: #555;
+  }
+  
+  .partner-card .logo {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  .left {
+    transform: translateX(-100%);
+  }
+  
+  .right {
+    transform: translateX(100%);
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .partner-card {
+      width: 90%;
+    }
+  }
+
+    @media (max-width: 420px) {
+  .video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  margin-top: 0vmax;
+}
+  }
+  

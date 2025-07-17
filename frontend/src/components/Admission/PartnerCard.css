@@ -1,0 +1,69 @@
+.partnerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    flex: none;
+    transition: all 0.5s;
+    background-color: whitesmoke;
+    margin: 12px auto;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.38);  
+    transition: all 0.5s !important;
+   
+}
+
+.partnerContainer > div {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partnerContainer > div:first-child {
+    width: 100%;
+    height: 90%;
+}
+
+.partnerContainer > div:first-child > img {
+    width: 165px;
+    height: 100px;
+}
+
+.partnerContainer > div:last-child {
+    height: 10% ;
+    padding: 15px 0vmax;
+}
+.partnerContainer > div:last-child > p {
+    font: 300 17px "Roboto";
+    color: rgba(0, 0, 0, 0.735);
+    transition: all 0.5s;
+
+}
+.partnerContainer > div:last-child > h3 {
+    font: 500 27px "Roboto";
+    color: rgba(0, 0, 0, 0.735);
+    transition: all 0.5s;   
+    padding: 0.1vmax 0vmax;
+}
+
+.partnerContainer:hover {
+    border-bottom:5px solid #2C7EAD ;
+
+}
+
+@media screen and (max-width:350px) {
+    .partnerContainer {
+        width: 200px;
+    }
+    .partnerContainer > div:first-child > img {
+        width: 200px;
+    }
+.partnerContainer > div:last-child > p {
+    font-size: 14px;
+}
+.partnerContainer > div:last-child > h3 {
+    font-size: 24px;
+}
+}

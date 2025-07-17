@@ -1,0 +1,223 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden !important;
+}
+
+footer > div {
+    display: flex;
+    padding: 1vmax;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+footer > div > div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.leftFooter {
+    width: 35%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.leftFooter > img {
+    width: 8vmax;
+    filter: contrast(200%);
+    padding: 1vmax;
+}
+
+.leftFooter > p {
+    font: 300 1.1vmax "Roboto";
+    letter-spacing: 0.1vmax;
+    padding: 1vmax;
+    padding-top: 0vmax;
+    word-spacing: 0.3vmax;
+}
+
+.midFooter1 {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.midFooter1 > h1 {
+    font: 800 1.8vmax "Roboto";
+    padding: 1vmax;
+
+}
+
+.midFooter1 > a {
+    font: 800 1vmax "Roboto";
+    padding: 0.5vmax 1vmax;
+    color: rgba(245, 245, 245, 0.904);
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+.midFooter1 > a:hover {
+    color: #2C7EAD;
+}
+
+.midFooter2 {
+    
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.midFooter2 > h1 {
+    
+    font: 800 1.8vmax "Roboto";
+    padding: 1vmax;
+}
+
+.midFooter2 > a {
+    
+    font: 800 1vmax "Roboto";
+    padding: 0.5vmax 1vmax;
+    color: rgba(245, 245, 245, 0.904);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.midFooter2 > a:hover {
+    color: #2C7EAD;
+}
+
+.rightFooter {
+    
+    display: flex;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.rightFooter > h1 {
+    font: 800 1.8vmax "Roboto";
+    padding: 1vmax;
+}
+.rightFooter > p {
+    
+    font: 800 0.9vmax "Roboto";
+    padding: 0.5vmax 1vmax;
+    color: rgba(245, 245, 245, 0.904);
+    word-spacing: 0.3vmax;
+    letter-spacing: 0.1vmax;
+}
+.miniFooter {
+    background-color: #2C7EAD;
+    color: white;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+}
+
+.miniFooter > div:first-child {
+    width: 60%;
+    box-sizing: border-box;
+}
+.miniFooter > div > p {
+
+    font: 800 1vmax "Roboto";
+    padding: 0.5vmax 1vmax;
+    color: white;
+    letter-spacing: 0.2vmax;
+    word-spacing: 0.1vmax;
+}
+
+.miniFooter > div:last-child {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.miniFooter > div:last-child > a {
+    color: white;
+    padding: 0vmax 1vmax;
+    transition: all 0.5s;
+    font-size: 1.6vmax;
+
+}
+.miniFooter > div:last-child > a:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+footer > div:first-child {
+    flex-direction: column;
+}
+footer > div > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+.leftFooter {
+    width: 100%;
+}
+.leftFooter > img {
+    width: 30vmax;
+}
+.leftFooter > p {
+    font-size: 1.8vmax;
+    padding: 2vmax ;
+}
+.midFooter1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+.midFooter1 > h1 {
+    font-size: 2.8vmax;
+}
+
+.midFooter1 > a {
+    font-size: 2vmax;
+    padding: 1vmax;
+}
+.midFooter2 {
+    width: 100%;
+    box-sizing: border-box;
+}
+.midFooter2 > h1 {
+    font-size: 2.8vmax;
+}
+.midFooter2 > a {
+    padding: 1vmax;
+    font-size: 2vmax;
+}
+.rightFooter {
+    width: 100%;
+    box-sizing: border-box;
+}
+.rightFooter > h1 {
+    font-size: 2.8vmax;
+
+}
+.rightFooter > p {
+    font-size: 2vmax;
+
+}
+.miniFooter > div > p {
+    font-size: 1.9vmax;
+}
+.miniFooter > div:last-child > a {
+    font-size: 3vmax;
+}
+}
+
+@media screen and (max-width: 280px) {
+    .miniFooter > div:last-child > a {
+        padding: 0.5vmax;
+    }
+}
+
+
+

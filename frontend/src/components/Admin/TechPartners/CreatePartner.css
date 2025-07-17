@@ -1,0 +1,54 @@
+
+.PartnerInput  
+{
+position: relative;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+margin: 0.5vmax;
+}
+.PartnerInput input 
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+border-radius: 4px;
+font-weight: 500;
+font-size: 1em;
+border: 1px solid black;
+padding: 15px ;
+color: rgba(0, 0, 0, 0.734);
+outline: none;
+
+
+}
+.PartnerInput:last-child {
+  width: 100%;
+}
+.PartnerInput input[type="Number"]{
+  width: 50%;
+}
+.PartnerInput i 
+{
+position: absolute;
+left: 30px;
+bottom: 45px;
+font-style: normal;
+background-color: white;
+color: #000000ba;
+transition: 0.5s;
+pointer-events: none;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.PartnerInput input:focus ~ i,
+.PartnerInput input:valid ~ i
+{
+transform: translateY(-7.5px);
+font-size: 0.8em;
+color: rgba(0, 0, 0, 0.734);
+}
+

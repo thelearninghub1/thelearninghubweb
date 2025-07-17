@@ -1,0 +1,121 @@
+.ourProjectsContainer {
+    min-height: 100vmin;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ourProjectsContainer > div {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.topCareerContainer {
+    background-image: url("../../../assets/career.jpeg");
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    min-height: 70vmin;
+    box-sizing: border-box;
+    text-align: center;
+    filter: brightness(0.99) contrast(105%);
+}
+
+.topCareerContainer > h1 {
+    font: 600 2.6vmax "Roboto";
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5vmax;
+}
+
+.topCareerContainer > p {
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    
+    font: 200 1.4vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midProjectContainer {
+display: flex;
+box-sizing: border-box;
+padding: 2vmax;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px) {
+.topCareerContainer > h1 {
+    font-size: 3.7vmax;
+    padding-top: 14vmax;
+    padding-bottom: 1vmax;
+
+}
+
+.topCareerContainer > p {
+    font-size: 2.6vmax;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+.topCareerContainer {
+    min-height: 100vmin;
+}
+}
+
+
+.cvContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.cvContainer > label {
+    font: 300 20px cursive;
+    padding: 1vmax;
+    text-decoration:overline;
+    color: rgba(0, 0, 0, 0.797);
+}
+
+.cvContainer > input {
+    margin-top: 1rem;
+  }
+  
+  .cvContainer >   input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    padding: 0.7vmax 1vmax;
+    border-radius: 3px;
+    background-color: #2C7EAD;
+    border: none;
+    transition: all 0.5s;
+  }
+
+  .cvContainer >   input::file-selector-button:hover {
+    background-color: white;
+    border: 1px solid #2C7EAD;
+    color: #2C7EAD;
+    cursor: pointer;
+  }

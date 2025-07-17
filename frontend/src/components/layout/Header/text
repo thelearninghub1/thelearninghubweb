@@ -1,0 +1,172 @@
+import React, { useState , useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa6";
+import { RiFacebookCircleLine } from "react-icons/ri";
+import { TbBrandLinkedin } from "react-icons/tb";
+import { CiYoutube } from 'react-icons/ci';
+import { GiHamburgerMenu } from "react-icons/gi";
+import logo from '../../../assets/logo.png';
+import { IoCloseSharp } from "react-icons/io5";
+import './Header.css';
+
+const services = [
+    
+    { name: "Skills Development Courses", nameLink: "skills-development-courses" },
+    {  name: "Subjects Summary", nameLink: "subjects-summary" },
+    { name: "Instructional Methods", nameLink: "instructional-methods" },
+    {  name: "Academic Support", nameLink: "academic-support" },
+    {  name: "Academic Calendar", nameLink: "academic-calendar" },
+    {  name: "Extra Curricular Activities", nameLink: "extra-curricular-activities" }
+];
+
+const admissions = [
+    
+    { name: "How to Register", nameLink: "registeration-guide" },
+    { name: "Apply Now", nameLink: "apply-now" },
+];
+
+const contactUs = [
+    
+    { name: "Contact Us", nameLink: "contact-us" },
+    { name: "Partner With Us", nameLink: "partner-with-us" },
+];
+const aboutUs = [
+    
+    { name: "Our History", nameLink: "our-history" },
+    { name: "Our Team", nameLink: "our-team" },
+    { name: "Our Teachers", nameLink: "our-teachers" },
+    { name: "Affiliation Accreditation", nameLink: "affiliation-accreditation" },
+    { name: "Technology Partners", nameLink: "technology-partners" },
+    { name: "Career", nameLink: "career" },
+];
+
+const locations = [
+    
+    { name: "UAE", nameLink: "uae" },
+    { name: "KSA", nameLink: "ksa" },
+    { name: "Oman", nameLink: "oman" },
+    { name: "Turkey", nameLink: "turkey" },
+    { name: "Qatar", nameLink: "qatar" },
+    { name: "Bahrain", nameLink: "bahrain" },
+    { name: "Malaysia", nameLink: "malaysia" },
+];
+
+
+
+
+const media = {
+    facebook: "https://www.facebook.com/share/19yGzABBd5/",
+    linkedin: "https://www.linkedin.com/company/thelearninghubpk/",
+    instagram: "https://www.instagram.com/tlh_school?igsh=YzNwM3Nybjc3NGg0",
+    youtube: "https://youtube.com/@thelearninghub_tlh.?si=HTuOvOPLsPBva8Yu"
+};
+const Header = () => {
+    const [clicked, setClicked] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+
+    const handleClick = () => {
+        setClicked(!clicked);
+    };
+
+
+ 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    return (
+        <nav  className={`navbarContainer ${isScrolled ? "scrolled" : ""}`}>
+            <div className="leftNavbar">
+                <Link to={`/`}>
+                <img src={logo} alt="logo" />
+                </Link>
+                <div className="hamburger" id="mobile" onClick={handleClick}>
+                    {clicked ? <IoCloseSharp /> : <GiHamburgerMenu />}
+                </div>
+            </div>
+            <div className={clicked ? "midNavbar active" : "midNavbar"} id='midNavbar'>
+                <ul>
+             
+               <li className='minilist' onClick={handleClick}>
+                        <Link to={`/about-us`}>About Us</Link> <IoIosArrowDown />
+                        <div className='minilistAboutContainer'>
+                            {aboutUs.map((service) => (
+                                <li key={service.name} onClick={handleClick}>
+                                    <Link to={`/${service.nameLink}`}>{service.name}</Link>
+                                </li>
+                            ))}
+                        </div>
+                 </li>
+               <li className='minilist' onClick={handleClick}>
+                        <Link to={`/apply-now`}>Admission</Link> <IoIosArrowDown />
+                        <div className='minilistAdmissionContainer'>
+                            {admissions.map((admission) => (
+                                <li key={admissions.name} onClick={handleClick}>
+                                    <Link to={`/${admission.nameLink}`}>{admission.name}</Link>
+                                </li>
+                            ))}
+                        </div>
+                    </li>
+                <li className='minilist' onClick={handleClick}>
+                        <Link to={`/skills-development-courses`}>Academics</Link> <IoIosArrowDown />
+                        <div className='minilistContainer'>
+                            {services.map((service) => (
+                                <li key={service.name} onClick={handleClick}>
+                                    <Link to={`/${service.nameLink}`}>{service.name}</Link>
+                                </li>
+                            ))}
+                        </div>
+                 </li>
+                    <li className='minilist' onClick={handleClick}>
+                        <Link to={`/uae`}>Locations</Link> <IoIosArrowDown />
+                        <div className='minilistLocationContainer'>
+                            {locations.map((admission) => (
+                                <li key={admissions.name} onClick={handleClick}>
+                                    <Link to={`/${admission.nameLink}`}>{admission.name}</Link>
+                                </li>
+                            ))}
+                        </div>
+                    </li>     
+               <li className='minilist' onClick={handleClick}>
+                        <Link to={`/contact-us`}>Contact Us</Link> <IoIosArrowDown />
+                        <div className='minilistContactContainer'>
+                            {contactUs.map((admission) => (
+                                <li key={admissions.name} onClick={handleClick}>
+                                    <Link to={`/${admission.nameLink}`}>{admission.name}</Link>
+                                </li>
+                            ))}
+                        </div>
+                    </li>                   
+                </ul>
+            </div>
+            <div className="rightNavbar">
+                <div><MdOutlinePhoneInTalk /></div>
+                <div>
+                    <p>Call anytime</p>
+                    <p className='ikbhai'>+352 621 508 645</p>
+                    <div className='socialMedia'>
+                        <a href={media.facebook} target='blank'><RiFacebookCircleLine /></a>
+                        <a href={media.linkedin} target='blank'><TbBrandLinkedin /></a>
+                        <a href={media.instagram} target='blank'><FaInstagram /></a>
+                        <a href={media.youtube} target='blank'><CiYoutube /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Header;
+

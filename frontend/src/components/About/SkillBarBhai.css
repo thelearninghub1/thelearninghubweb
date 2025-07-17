@@ -1,0 +1,33 @@
+.skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Poppins";
+    color: rgba(0, 0, 0, 0.71);
+  }
+  
+  .skill-level {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 5px;
+  }
+  
+  .skill-level-bar {
+    background-color: #2C7EAD;
+    height: 100%;
+    border-radius: 5px;
+    animation: heroSkills 2s ease-in-out forwards 1s;
+  }
+
+  @keyframes heroSkills {
+    0% {
+        width: 0;
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }

@@ -1,0 +1,117 @@
+.servicesDetailsContainer {
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 100vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.servicesDetailsContainer > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 60vmin;
+
+}
+
+.topActivitiesContainer {
+    background-image: url('../../../assets/activities.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    filter: brightness(0.8) contrast(110%);
+    flex-direction: column;
+    background-position: center;
+    text-align: center;
+
+}
+
+.topActivitiesContainer > h1 {
+    font: 600 46px "Roboto";
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5vmax;
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    text-transform: capitalize;
+
+}
+
+.topActivitiesContainer > p {
+    
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    font: 200 21px "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+
+}
+.bottomServiceDetailsContainer {
+    flex-wrap: wrap;
+    padding: 3vmax;
+
+}
+
+.chooseUsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vmax;
+    box-sizing: border-box;
+    box-shadow: 0  0 6px green;
+}
+
+.chooseUsContainer > h1 {
+    text-align: center;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.361);
+    font: 700 42px "Roboto";
+    color: rgba(0, 0, 0, 0.785);
+    padding: 1vmax 0vmax;
+    text-transform: capitalize;
+}
+.chooseUsContainer > ul {
+    padding: 0vmax 2vmax;
+    padding-bottom: 1vmax;
+
+}
+.chooseUsContainer > ul > li {
+    font:300 19px "Roboto" ;
+    padding: 1vmax 0.5vmax;
+    color: rgba(0, 0, 0, 0.776);
+
+}
+@media screen and (max-width: 740px) {
+.topActivitiesContainer {
+    min-height: 100vmin !important;
+}
+.topActivitiesContainer > h1 {
+    letter-spacing: 0.2vmax;
+    word-spacing: 0.2vmax;
+    padding-top: 2vmax;
+}
+.topActivitiesContainer > p {
+    letter-spacing: 0.2vmax;
+    word-spacing: 0.2vmax;
+    padding-top: 2vmax;
+}
+    
+}
+
+@media screen and (max-width: 600px) {
+    .topActivitiesContainer > h1 {
+        padding-top: 160px;
+        font-size: 36px;
+    }
+    .topActivitiesContainer > p {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+
+
+.servicesDetailsCardContainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 80%;
+    
+    padding: 1vmax 0vmax;
+    margin: 1vmax auto;
+    transition: all 0.8s ease-in-out;
+
+
+}
+
+
+
+
+
+    
+
+.servicesDetailsCardContainer > h1 {
+    text-align: center;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.361);
+    font: 700 27px "Roboto";
+    color: rgba(0, 0, 0, 0.785);
+    padding: 1vmax 0vmax;
+    text-transform: capitalize;
+}
+
+.servicesDetailsCardContainer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicesDetailsCardContainer > div > p {
+    font: 400 17px "Lato";
+    padding: 0.5vmax 0vmax;
+    color: rgba(0, 0, 0, 0.64);
+    letter-spacing: 0.1vmax;
+    word-spacing: 0.3vmax;
+    line-height: 7vh;
+}
+
+.servicesDetailsCardContainer > div > img {
+    width: 400px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width:1100px) {
+    .servicesDetailsCardContainer > div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px) {
+.servicesDetailsCardContainer > div > img {
+    width: 46vmax;
+}
+
+}
+
+@media screen and (max-width:350px) {
+    .servicesDetailsCardContainer > div > img {
+        width: 36vmax;
+    }
+}
+
+
+
+
+
+
+
+
+
+.bottomServiceDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+}
+
+
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    padding: 1.5vmax;
+    border-radius: 10px;
+    background: #c1e3f86e;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.305);
+}
+
+.cardContent img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 22px;
+
+}
+
+.textContent {
+    max-width: 600px;
+}
+
+.textContent h1 {
+    font-size: 24px;
+    color: #2C7EAD;
+    margin-bottom: 1vmax;
+}
+
+.textContent p {
+    font-size: 16px;
+    color: #444;
+    line-height: 2.7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    .cardContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardContent img {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cardContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardContent img {
+        margin: 2vmax !important;
+        width: 30vmax !important;
+    }
+}

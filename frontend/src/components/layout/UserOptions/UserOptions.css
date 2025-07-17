@@ -1,0 +1,18 @@
+.speedDailBhai {
+    position: fixed !important;
+    right: 5vmax !important;
+    top: 157px !important;
+    z-index: 1000;
+}
+
+.MuiButtonBase-root:hover {
+    color: #2C7EAD !important;
+}
+
+.speedDailImage {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    z-index: 10000;
+
+}

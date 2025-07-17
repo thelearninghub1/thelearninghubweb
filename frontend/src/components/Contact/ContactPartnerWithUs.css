@@ -1,0 +1,315 @@
+.contactPartnerContainer {
+    min-height: 100vmin;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow: hidden;
+}
+.contactPartnerContainer > div {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 60vmin;
+
+}
+
+.uppercontactPartnerContainer {
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../../assets/partnerUs1.jpeg');
+    height: 70vmin;
+
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.8) contrast(120%);
+    box-sizing: border-box;
+}
+
+.uppercontactPartnerContainer > h1 {
+    font: 600 2.6vmax "Roboto";
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    padding-top: 5vmax;
+        
+}
+.uppercontactPartnerContainer > p {
+    
+    text-shadow:  0 0 7px rgba(255, 255, 255, 0.68);
+    font: 200 1.4vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.middlecontactPartnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.middlecontactPartnerContainer  > h1 {
+    font: 600 2.3vmax "Roboto";
+    width: 90%;
+    padding-top: 4vmax ;
+    padding-bottom: 1vmax ;
+
+    
+}
+.contactUsPartnerForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vmin;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contactUsPartnerForm > div {
+    width: 70%;
+    padding: 1vmax 0vmax;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactUsPartnerForm > div > input , .contactUsPartnerForm > div > textarea{
+    padding: 1vmax;
+    width: 80%;
+    border: none;
+    font: 200 1.1vmax "Lato";
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.313);
+    color: rgba(0, 0, 0, 0.699);
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+.contactPartnerBtn {
+    padding: 1vmax 4vmax;
+    cursor: pointer;
+    box-shadow:  0 0 7px rgba(0, 0, 0, 0.364);
+    border: none;
+    color: white;
+    background-color: #2C7EAD;
+    font: 100 1vmax "Lato";
+    letter-spacing: 0.1vmax;
+    transition: all 0.5s;
+    margin: 1vmax ;
+    margin-bottom: 4vmax;
+}
+
+.contactPartnerBtn:hover {
+    color: #2C7EAD;
+    border: 2px solid #2C7EAD;
+    background-color: white;
+}
+
+
+
+
+.lowercontactPartnerContainer {
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.lowercontactPartnerContainer > div {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 2vmax;
+    flex-direction: column;
+}
+
+.lowercontactPartnerContainer > div:first-child > h1 {
+    font: 600 2.6vmax "Roboto";
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lowercontactPartnerContainer > div:first-child > p {
+    font: 200 1.3vmax "Roboto";
+    padding: 0vmax 6vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.lowercontactPartnerContainer > div:last-child  {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.lowercontactPartnerContainer > div:last-child  > div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding-bottom: 8vmax;
+}
+
+.lowercontactPartnerContainer > div:last-child  > div > svg {
+    font-size: 4vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > h1 {
+    font: 600 1.6vmax "Roboto";
+    padding: 1vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lowercontactPartnerContainer > div:last-child  > div > h3 {
+    
+    font: 600 1.1vmax "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lowercontactPartnerContainer > div:last-child  > div > p {
+    color: rgba(255, 255, 255, 0.874);
+    font: 600 1vmax "Roboto";
+    letter-spacing: 0.1vmax;
+}
+
+.bhai {
+    padding-top: 0.5vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > a {
+    
+    font: 600 1.1vmax "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.797);
+    padding-top: 0.5vmax;
+    text-decoration: none;
+}
+.lowercontactPartnerContainer > div:last-child  > div > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .uppercontactPartnerContainer > h1 {
+        font-size: 4vmax;
+    }
+    .uppercontactPartnerContainer > p {
+        font-size: 2vmax;
+        letter-spacing: 0.4vmax;
+    
+    }
+
+
+   
+}
+
+@media screen and (max-width: 900px) {
+
+.uppercontactPartnerContainer > h1 {
+    font-size: 5vmax;
+}
+.uppercontactPartnerContainer > p {
+    font-size: 2.6vmax;
+    letter-spacing: 0.4vmax;
+    line-height: 4vh;
+
+}
+.middlecontactPartnerContainer  > h1 {
+    font-size: 2.9vmax;
+}
+.contactUsPartnerForm > div {
+    padding: 2vmax 0vmax;
+}
+.contactUsPartnerForm > div > input , .contactUsPartnerForm > div > textarea{
+    width: 100%;
+    font-size: 1.8vmax;
+    padding: 1.5vmax 1vmax;
+
+}
+.contactPartnerBtn {
+    font-size: 1.8vmax;
+    margin-top: 2vmax;
+    padding: 1.5vmax 5vmax;
+}
+
+.lowercontactPartnerContainer > div:first-child > h1 {
+    font-size: 3.6vmax;
+}
+.lowercontactPartnerContainer > div:first-child > p {
+    font-size: 2.2vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > svg {
+    font-size: 6.5vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > h1 {
+    font-size: 2.8vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > h3 {
+    font-size: 2vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > p {
+    font-size: 1.6vmax;
+}
+.lowercontactPartnerContainer > div:last-child  > div > a {
+    font-size: 2vmax;
+}
+
+}
+@media screen and (max-width: 730px) {
+    .contactPartnerContainer > div:first-child  {
+        background-size: contain;
+    }
+    .uppercontactPartnerContainer > h1 {
+        padding-top: 20vmax;
+        font-size: 5vmax;
+    }
+}
+@media screen and (max-width: 600px) {
+.middlecontactPartnerContainer {
+    flex-direction: column;
+}
+.middlecontactPartnerContainer  {
+    width: 90%;
+}
+.middlecontactPartnerContainer > div:last-child {
+    padding-left: 6vmax;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    .uppercontactPartnerContainer > h1 {
+        padding-top: 20vmax;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactPartnerContainer > div:first-child  {
+        min-height: 100vmin;
+    }
+    .uppercontactPartnerContainer > h1 {
+        padding-top: 25vmax;
+    }
+    .lowercontactPartnerContainer > div:last-child  {
+        flex-direction: column;
+    }
+    .uppercontactPartnerContainer > p {
+    padding-bottom: 2vmax;
+
+    }
+  
+}

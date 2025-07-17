@@ -1,0 +1,146 @@
+.dashboardMainWrapper {
+    width: 100% !important;
+    min-height: 120vmin !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 10vmax;
+    background-color: rgba(135, 207, 235, 0.807);
+
+}
+
+.dashboardLayout {
+    width: 100% !important;
+    display: flex;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    background-color: rgba(135, 207, 235, 0.807);
+
+    min-height: 70vmin;
+}
+
+
+.dashboardSummarySection > div {
+    display: flex;
+    background-color: rgba(135, 207, 235, 0.807);
+
+    justify-content: center;
+}
+.dashboardSummarySection > div > p {
+    background-color: #D9F1FF;
+    color: rgba(0, 0, 0, 0.697);
+    font: 300 1.5rem "Roboto";
+    text-align: center;
+    padding: 1.6rem;
+    width: 100%;
+    margin: 0 2rem;
+    border-radius: 7px;
+}
+
+.dashboardStatsBox > a {
+    color: rgb(0, 0, 0);
+    font: 300 2rem "Roboto";
+    text-align: center;
+    background-color: rgb(255, 233, 174);
+    text-decoration: none;
+    padding: 4rem;
+    width: 15vmax;
+    height: 15vmax;
+    margin: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboardStatsBox > a:first-child {
+    background-color: rgb(255, 110, 110);
+    color: rgb(255, 255, 255);
+}
+
+.dashboardStatsBox > a:last-child {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+/* Rest of your styles (unchanged class names) */
+@media screen and (max-width: 650px) {
+  .dashboardLayout {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboardLayout > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .dashboardContentWrapper {
+    border-left: none;
+  }
+
+  .dashboardSummarySection > div > p {
+    margin: 0;
+  }
+
+  .dashboardStatsBox > a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .dashboardStatsBox > a {
+    margin: 7px 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboardMiniContainer {
+    flex-direction: column;
+  }
+
+  .dashboardMiniContainer > div {
+    min-width: 100%;
+  }
+
+  .dashboardMiniContainer > div:last-child {
+    flex-direction: row;
+  }
+
+  .thirdMiniContainer {
+    justify-content: space-evenly !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboardMiniContainer > div:last-child {
+    flex-direction: column;
+  }
+
+  .dashboardMiniSecondContainer > div:last-child > img {
+    width: 200px;
+  }
+
+  .dashboardMiniSecondContainer > div:first-child > h1 {
+    font-size: 17px;
+  }
+
+  .dashboardMiniSecondContainer > div:first-child > p {
+    font-size: 12px;
+  }
+
+  .dashboardIntroContainer > div > h1 {
+    font-size: 17px;
+  }
+
+  .dashboardIntroContainer > div > p {
+    font-size: 14px;
+  }
+}

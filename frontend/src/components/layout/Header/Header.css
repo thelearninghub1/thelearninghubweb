@@ -1,0 +1,601 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbarContainer {
+    background-color: rgb(0, 0, 0);
+    background-color: #0d3b6660;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 1vmax 7vmax; 
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1000;
+    top: 0%;
+
+    position: fixed;
+ 
+}
+
+ 
+.leftNavbar {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.leftNavbar > a > img {
+    filter: contrast(200%);
+    width: 5vmax;
+}
+
+#midNavbar {
+    width: 60%;
+    transition: all 0.5s;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#midNavbar > ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#midNavbar > ul > li {
+    display: flex;
+    padding: 1.5vmax;
+    align-items: center;
+     
+  
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#midNavbar > ul > li > svg {
+    font-weight: 800;
+    font-size: 1.2vmax;
+    transition: all 0.5s;
+
+}
+#midNavbar > ul > li > a {
+    color: white;
+    align-items: center;
+    font: 200 1vmax "Roboto";
+    text-decoration: none;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+#midNavbar > ul > li:hover {
+    color: #2C7EAD;
+}
+
+#midNavbar > ul > li > a:hover {
+    color: #2C7EAD;
+}
+
+
+.rightNavbar {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.rightNavbar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3vmax;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rightNavbar > div > svg {
+    border: 2px solid #2C7EAD;
+    padding: 1vmax;
+    border-radius: 100%;
+    font-size: 1.6vmax;
+}
+
+.rightNavbar > div > p:first-child {
+    font: 200 0.9vmax "Roboto";
+    padding-bottom: 0.2vmax;
+}
+
+.rightNavbar > div > p{
+    font:600 1vmax "Lato";
+    letter-spacing: 0.1vmax;
+}
+
+.minilistContainer {
+    position: fixed;
+    background-color: black;
+    top: 6vmax;
+    left: 46vmax;
+    display: none; 
+    width: 18vmax;
+    flex-direction: column;
+    transition: all 0.5s;
+    text-align: left;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.minilistAboutContainer  {
+    position: fixed;
+    background-color: black;
+    top: 6vmax;
+    left: 28.5vmax;
+    display: none; 
+    width: 15.5vmax;
+    flex-direction: column;
+    transition: all 0.5s;
+    text-align: left;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.minilistAdmissionContainer  {
+    position: fixed;
+    background-color: black;
+    top: 6vmax;
+    left: 37vmax;
+    display: none; 
+    width: 15vmax;
+    flex-direction: column;
+    transition: all 0.5s;
+    text-align: left;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.minilistContactContainer {
+    position: fixed;
+    background-color: black;
+    top: 6.5vmax;
+    left: 63.5vmax;
+    display: none; 
+    width: 15vmax;
+    flex-direction: column;
+    transition: all 0.5s;
+    text-align: left;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.minilistLocationContainer {
+    position: fixed;
+    background-color: black;
+    top: 6.5vmax;
+    left: 55vmax;
+    display: none; 
+    width: 15vmax;
+    flex-direction: column;
+    transition: all 0.5s;
+    text-align: left;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.minilistContainer > li:first-child  , .minilistAdmissionContainer > li:first-child , .minilistContactContainer > li:first-child , .minilistLocationContainer > li:first-child , .minilistAboutContainer > li:first-child {
+    border-top: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.minilistContainer:hover , .minilistAdmissionContainer:hover , .minilistContactContainer:hover , .minilistLocationContainer:hover , .minilistAboutContainer:hover{
+    display: flex;
+}
+.minilistContainer > li , .minilistAdmissionContainer > li , .minilistContactContainer > li , .minilistLocationContainer > li , .minilistAboutContainer > li{
+    border-top: 1px solid white;
+    transition: all 0.5s;
+
+}
+
+.minilistContainer > li:hover , .minilistAdmissionContainer > li:hover , .minilistContactContainer > li:hover ,  .minilistLocationContainer > li:hover , .minilistAboutContainer > li:hover{
+    background-color: white;
+
+}
+
+.minilistContainer > li > a , .minilistAdmissionContainer > li > a  , .minilistContactContainer > li > a ,  .minilistLocationContainer > li > a , .minilistAboutContainer > li > a {
+    display: flex;
+    color: white;
+    transition: all 0.5s;
+
+    font: 800 1vmax "Roboto";
+    padding: 1vmax ;
+    padding-right: 4vmax ;
+
+    text-decoration: none;
+
+
+}
+.minilistContainer > li > a:hover  , .minilistAdmissionContainer > li > a:hover , .minilistContactContainer > li > a:hover ,  .minilistLocationContainer > li > a:hover , .minilistAboutContainer > li > a:hover{
+    color: #2C7EAD;
+}
+
+#midNavbar > ul > li:hover .minilistContainer , #midNavbar > ul > li:hover .minilistAdmissionContainer , #midNavbar > ul > li:hover .minilistContactContainer , #midNavbar > ul > li:hover .minilistLocationContainer , #midNavbar > ul > li:hover .minilistAboutContainer{
+    display: flex;
+}
+
+.socialMedia {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 370px;
+    right: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.socialMedia > a {
+    padding: 6px;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.socialMedia > a:hover {
+    color: #2C7EAD;
+    transform: scale(1.6);
+}
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .navbarContainer {
+    padding: 1vmax 0vmax;
+
+    }
+    #midNavbar > ul > li > a {
+        font-size: 1.3vmax;
+    }
+    .rightNavbar > div > p {
+        font-size: 1.2vmax;
+
+    }
+    .rightNavbar > div > svg {
+        font-size: 1.6vmax;
+    }
+    .minilistContainer , .minilistAdmissionContainer , .minilistContactContainer , .minilistLocationContainer , .minilistAboutContainer{
+        width: 20vmax;
+        top: 6vmax;
+    
+        }
+        .minilistContainer > li > a  , .minilistAdmissionContainer > li > a , .minilistContactContainer > li > a , .minilistLocationContainer > li > a ,  .minilistAboutContainer > li > a {
+            font-size: 1.3vmax;
+            padding:  2vmax ;
+        
+        }
+        #midNavbar > ul > li > svg {
+            font-size: 1.2vmax;
+        
+        }
+      
+    
+}
+
+@media screen and (max-width: 900px) {
+    .navbarContainer {
+        background-color: black !important;
+    }
+    .leftNavbar {
+        width: 25%;
+    }
+    .leftNavbar > a > img {
+        width: 8vmax;
+    }
+    #midNavbar > ul > li > a {
+        font-size: 1.6vmax;
+    }
+    .rightNavbar > div > p {
+        font-size: 1.4vmax;
+    }
+    .rightNavbar > div > svg {
+        font-size: 2vmax;
+    }
+    .minilistContainer , .minilistAdmissionContainer , .minilistContactContainer , .minilistLocationContainer , .minilistAboutContainer{
+    width: 25vmax ;
+    top: 7vmax;
+
+    }
+.minilistContainer > li > a  , .minilistAdmissionContainer > li > a , .minilistContactContainer > li > a , .minilistLocationContainer > li > a , .minilistAdmissionContainer > li > a {
+    font-size: 1.6vmax;
+    padding:  2vmax ;
+
+}
+#midNavbar > ul > li > svg {
+    font-size: 1.5vmax;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 730px) {
+    .navbarContainer {
+        flex-direction: column-reverse;
+        padding: 0%;
+        border-top: none;
+       
+    }
+.navbarContainer > div{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.rightNavbar {
+    background-color: #2C7EAD;
+}
+.rightNavbar > div > svg {
+    font-size: 4vmax;
+
+}
+.rightNavbar > div > p {
+    font-size: 2.1vmax;
+}
+.rightNavbar > div > p:first-child {
+    font-size: 1.5vmax;
+}
+
+.leftNavbar {
+    justify-content: flex-start;
+    padding: 0%;
+    justify-content: space-between;
+
+}
+.leftNavbar > a > img {
+width: 10vmax;
+padding: 1vmax;
+
+
+}
+.socialMedia {
+    flex-direction: row;
+    top: 5px;
+    color: white;
+    right: 2px;
+}
+.socialMedia > a {
+    color: white;
+    font-size: 20px;
+}
+.socialMedia > a:hover {
+    color: black;
+}
+
+#midNavbar {
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    z-index: 100;
+    top: 155px;
+    box-sizing: border-box;
+    background-color: black;
+    right: -1000px;
+
+
+}
+#midNavbar.active {
+    right: 0px;
+}
+#midNavbar > ul {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+
+}
+.navbarContainer {
+    background-color: black;
+}
+#midNavbar > ul > li{
+    width: 100%;
+    box-sizing: border-box;
+    
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+
+
+}
+#midNavbar > ul > li:first-child{
+    border-top: none;
+}
+#midNavbar > ul > li > svg{
+    padding: 2vmax ;
+    font-size: 4vmax;
+}
+#midNavbar > ul > li > a {
+    padding: 1.5vmax 4vmax;
+    font-size: 2.5vmax;
+
+
+}
+.minilistContainer , .minilistAdmissionContainer , .minilistContactContainer , .minilistLocationContainer , .minilistAboutContainer{
+    position: static;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+    border-right: none;
+    border-left:none;
+    border: none;
+}
+.minilistContainer > li > a , .minilistAdmissionContainer > li > a , .minilistContactContainer > li > a , .minilistLocationContainer > li > a , .minilistAboutContainer > li > a {
+    font-size: 2.2vmax;
+    padding: 1.5vmax 4vmax;
+}
+.minilistContainer > li > a:first-child , .minilistAdmissionContainer > li > a:first-child , .minilistContactContainer > li > a:first-child , .minilistLocationContainer > li > a:first-child , .minilistAboutContainer > li > a:first-child{
+    padding-top: 1.5vmax;
+}
+.hamburger {
+    display: flex;
+    padding: 2vmax 2vmax;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.hamburger > svg {
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 5vmax;
+}
+.hamburger > svg:hover {
+    color: #2C7EAD;
+}
+.minilist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+    text-align: left;
+    justify-content: flex-start;
+}
+.minilist > a {
+    width: 90%;
+}
+.minilist > svg {
+    position: absolute;
+    right: 5px;
+}
+
+
+}
+@media screen and (max-width: 500px) {
+    .minilist > a {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+.leftNavbar > a > img {
+    width: 10vmax;
+}
+#midNavbar {
+    top:121px ;
+}
+
+.socialMedia > a {
+    padding: 2px;
+
+}
+.minilist > a {
+    width: 80%;
+}
+}
+
+.navbarContainer {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbarContainer.scrolled {
+    background-color: black; /* or any solid/dark color you prefer */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
